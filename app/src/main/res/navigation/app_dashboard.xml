@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_dashboard"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.weather.forecast.ui.dashboard.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_home_to_favorite"
+            app:destination="@id/favorite" />
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.weather.forecast.ui.dashboard.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.weather.forecast.ui.dashboard.fragments.CityFavoriteFragment"
+        android:label="CityFavoriteFragment" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.weather.forecast.ui.dashboard.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

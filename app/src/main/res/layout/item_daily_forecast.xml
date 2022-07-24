@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/week_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#494949"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/temperature"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Wednesday" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#4A5568"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintLeft_toLeftOf="@id/week_day"
+        app:layout_constraintTop_toBottomOf="@id/week_day"
+        tools:text="12 Apr" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#4A5568"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintBottom_toBottomOf="@id/date"
+        app:layout_constraintLeft_toRightOf="@id/week_day"
+        app:layout_constraintRight_toLeftOf="@id/weatherImg"
+        app:layout_constraintTop_toTopOf="@id/week_day"
+        tools:text="24°" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/weatherImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/date"
+        app:layout_constraintLeft_toRightOf="@id/temperature"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/week_day"
+        app:srcCompat="@drawable/default_cloud" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

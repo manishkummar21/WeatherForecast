@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFEE58</color>
+    <color name="purple_500">#FDD835</color>
+    <color name="purple_700">#FFD000</color>
+    <color name="orange">#EF6C00</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="box_background_color">#33E7E7E7</color>
+    <color name="inner_border">#E7E7E7</color>
+
+    <color name="gradientstart">@color/purple_700</color>
+    <color name="gradientend">@color/purple_200</color>
+
+</resources>

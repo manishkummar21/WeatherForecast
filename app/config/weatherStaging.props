@@ -1,0 +1,4 @@
+BASE_URL = "https://api.openweathermap.org/data/2.5/"
+PreferenceName = "weatherForecastStaging"
+DataBaseName = "weatherForecastStaging"
+openWeatherApiKey = "21f12e010376ab33167b2cc77510bde4"
